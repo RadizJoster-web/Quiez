@@ -1,8 +1,12 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
+
 import InputUsername from "../components/sections/inputUsername";
 import Loading from "../components/elements/loading";
 
 export default function InputNamePage() {
+  const navigate = useNavigate();
+
   const [load, setLoad] = useState(true);
 
   const handleFormUsername = (e) => {
@@ -12,7 +16,7 @@ export default function InputNamePage() {
 
     if (username) {
       localStorage.setItem("username", username);
-      window.location.href = "/play/quiz/difficulty";
+      navigate("/play/quiz/difficulty");
     } else {
       alert("Please enter your name");
     }
@@ -23,7 +27,7 @@ export default function InputNamePage() {
   useState(() => {
     const username = localStorage.getItem("username");
     if (username) {
-      window.location.href = "/play/quiz/difficulty";
+      navigate("/play/quiz/difficulty");
     } else {
       setLoad(false);
     }
