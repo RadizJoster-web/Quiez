@@ -1,5 +1,5 @@
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Routes,
   Route,
   BrowserRouter,
@@ -22,7 +22,7 @@ import ScrollToTop from "./components/elements/ScrillToTop";
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <main className="bg-white text-dark relative">
         <Navbar />
         <ScrollToTop />
@@ -41,7 +41,7 @@ function App() {
         </Routes>
         <Footer />
       </main>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
