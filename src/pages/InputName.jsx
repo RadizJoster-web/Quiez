@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 import InputUsername from "../components/sections/inputUsername";
@@ -24,7 +24,7 @@ export default function InputNamePage() {
 
   // Check is the user have an username
   // if true redirect to /play/quiz/difficulty
-  useState(() => {
+  useEffect(() => {
     const username = localStorage.getItem("username");
     if (username) {
       navigate("/play/quiz/difficulty");
