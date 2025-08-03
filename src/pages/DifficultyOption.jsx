@@ -73,7 +73,9 @@ export default function Difficulty() {
             />
             <label htmlFor="easy">
               <TiltedCard
-                imageSrc="/difficulty-card/easy.jpeg"
+                imageSrc={`${
+                  import.meta.env.BASE_URL
+                }difficulty-card/easy.jpeg`}
                 altText="Easy"
                 captionText="Easy"
                 containerHeight="400px"
@@ -104,7 +106,9 @@ export default function Difficulty() {
             />
             <label htmlFor="medium">
               <TiltedCard
-                imageSrc="/difficulty-card/medium.jpeg"
+                imageSrc={`${
+                  import.meta.env.BASE_URL
+                }difficulty-card/medium.jpeg`}
                 altText="medium"
                 captionText="Medium"
                 containerHeight="400px"
@@ -135,7 +139,9 @@ export default function Difficulty() {
             />
             <label htmlFor="hard">
               <TiltedCard
-                imageSrc="/difficulty-card/hard.jpeg"
+                imageSrc={`${
+                  import.meta.env.BASE_URL
+                }difficulty-card/hard.jpeg`}
                 altText="hard"
                 captionText="Hard"
                 containerHeight="400px"
@@ -166,7 +172,9 @@ export default function Difficulty() {
             />
             <label htmlFor="impossible">
               <TiltedCard
-                imageSrc="/difficulty-card/impossible.jpeg"
+                imageSrc={`${
+                  import.meta.env.BASE_URL
+                }difficulty-card/impossible.jpeg`}
                 altText="impossible"
                 captionText="Impossible"
                 containerHeight="400px"
