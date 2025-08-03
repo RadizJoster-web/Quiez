@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+@theme {
+  --color-white: #eeeeee;
+  --color-primary: #00adb5;
+  --color-dark: #222831;
+  --color-lighter-dark: #222831b3;
+
+  --font-kanit: "Kanit", sans-serif;
+}
+
+body {
+  font-family: sans-serif;
+  width: 100vw;
+  overflow-x: hidden;
+  background-color: var(--color-primary);
+}
+
+.my-button {
+  box-shadow: 0 0 0 black;
+  transition: all 0.1s ease-in-out;
+}
+
+.my-button:hover {
+  box-shadow: 6px 12px 0 black;
+}
+
+/* Loading */
+.loading-spinner {
+  width: 3.25em;
+  transform-origin: center;
+  animation: rotate4 2s linear infinite;
+}
+
+.loading-spinner circle {
+  fill: none;
+  stroke: hsl(214, 97%, 59%);
+  stroke-width: 2;
+  stroke-dasharray: 1, 200;
+  stroke-dashoffset: 0;
+  stroke-linecap: round;
+  animation: dash4 1.5s ease-in-out infinite;
+}
+
+@keyframes rotate4 {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes dash4 {
+  0% {
+    stroke-dasharray: 1, 200;
+    stroke-dashoffset: 0;
+  }
+
+  50% {
+    stroke-dasharray: 90, 200;
+    stroke-dashoffset: -35px;
+  }
+
+  100% {
+    stroke-dashoffset: -125px;
+  }
+}
