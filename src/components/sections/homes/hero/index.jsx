@@ -15,6 +15,6 @@ export default function HeroSection() {
           <MyButton text="Contact Us" />
         </Link>
       </span>
-    </div>
+    </div>  
   );
 }

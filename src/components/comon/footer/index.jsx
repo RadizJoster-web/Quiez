@@ -3,7 +3,7 @@ import { FaGithub, FaLinkedin, FaTwitter, FaInstagram } from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <footer className="absolute bottom-0 left-0 z-50 w-full h-16 flex justify-between items-center px-20 ">
+    <footer className="absolute bottom-0 left-0 z-50 w-full h-16 flex justify-between items-center px-2 md:px-20 ">
       <h1 className="text-sm font-medium">&copy; 2025 Radiz Quiz App</h1>
 
       <div className="flex gap-4 text-xl">
