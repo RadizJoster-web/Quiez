@@ -5,7 +5,7 @@ export default function InfoNotif({ text, position, show }) {
         ${show ? "translate-x-0" : "translate-x-full"}
       `}
       style={{
-        position: "absolute",
+        position: "fixed",
         ...position, // inject style props seperti { top: '20px', right: '10px' }
       }}
     >
