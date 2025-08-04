@@ -54,7 +54,7 @@ export default function Result() {
   }
 
   return (
-    <div className="w-full min-h-screen flex items-start justify-center py-20">
+    <div className="w-full min-h-screen flex items-center md:items-start justify-center py-20">
       <div className="flex flex-col justify-center items-center text-center">
         <Appresiate />
 
