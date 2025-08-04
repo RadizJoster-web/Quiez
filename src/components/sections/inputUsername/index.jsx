@@ -4,7 +4,7 @@ export default function InputUsername({ handleFormUsername }) {
   return (
     <form
       onSubmit={(e) => handleFormUsername(e)}
-      className="w-full flex items-end justify-center gap-5"
+      className="w-full flex flex-col md:flex-row items-center md:items-end justify-center gap-5 px-2"
     >
       <span className="flex flex-col gap-5 items-center">
         <h1 className="text-2xl font-kanit flex flex-col items-center gap-1">
@@ -17,7 +17,7 @@ export default function InputUsername({ handleFormUsername }) {
         <input
           type="text"
           name="username"
-          className="w-150 py-3 outline-0 text-xl text-center border-b-2"
+          className="w-full md:w-150 py-3 outline-0 text-xl text-center border-b-2"
           required
         />
       </span>
