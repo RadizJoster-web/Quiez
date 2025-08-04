@@ -35,7 +35,7 @@ export default function Question() {
     <div>
       <form
         onSubmit={(e) => handleAnswer(e)}
-        className="min-h-screen flex flex-col justify-start items-start gap-10 px-20 py-20"
+        className="min-h-screen flex flex-col justify-start items-start gap-10 px-2 md:px-20 py-20"
       >
         <WarningText />
         <Questions difficulty={difficulty} />
